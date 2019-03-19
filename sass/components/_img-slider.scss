@@ -1,0 +1,120 @@
+.section-videos__content{
+   padding: 5rem 0 0 5rem;
+   color: $color-white;
+    h3{
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 2rem
+      }
+}
+.section-videos{
+  height: 60vh;
+  background-color: $color-black;
+div {
+  &.items {
+    white-space: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    height: 45vh;
+    &:hover {
+      & .item {
+        opacity: 0.3;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.control-container {
+    height: $container-height;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    top: 50%;  
+  }
+  
+  &.container {
+    user-select: none;
+    min-height: $container-height;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  &.left-scroll {
+    right: 10rem;  }
+  &.right-scroll {
+    right: 4rem;
+  }
+
+}
+
+.item {
+  position: relative;
+  align-self: center;
+  width: $item-size + 50px;
+  height: $item-size - 20px;
+  margin: 0 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 899;
+  &:first-child{
+    margin-left: 8rem;
+  }
+  &:last-child{
+    margin-right: 8rem;
+  }
+  
+  &:hover {
+    transform: scale($scale-factor);
+    opacity: 1;
+    z-index: 950;
+    height: $item-size + 60px;
+    & .item-image {
+      border:none;
+    }
+    & .opacity-none {
+      opacity: 1;
+    }
+   
+  }
+  
+  & .opacity-none {
+    opacity: 0;
+  }
+  
+  & img.item-image {
+    width: $item-size + 50px;
+    height: $item-size - 20px;
+    object-fit: cover;
+    border: 1px solid $color-white;
+  }
+  
+  & .item-description {
+    white-space: initial;
+    width: 100%;
+    margin-top: 2rem;
+    p{
+    color: $color-white;
+    font-size: 10px;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    }
+  }
+}
+
+.button {
+  position: absolute;
+    z-index: 950;
+  
+}
+}

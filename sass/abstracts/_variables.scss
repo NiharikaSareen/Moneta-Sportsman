@@ -1,0 +1,11 @@
+$color-primary: #FF565C;
+$light-primary: lighten($color-primary,20%);
+$color-secondary: #f2f3f6;
+$color-white: #fff;
+$color-black: #000;
+
+/*image slider variables*/
+$container-height: 200px;
+$size: 30px;
+$scale-factor: 1.5;
+$item-size: $container-height / $scale-factor;
