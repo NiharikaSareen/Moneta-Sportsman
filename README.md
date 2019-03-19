@@ -28,3 +28,4 @@ npm start
 
 ## Screenshot
 
+![alt text](https://github.com/NiharikaSareen/Moneta-Sportsman/blob/master/Moneta.jpeg)
